@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.main > .fb {
+  width: 250px;
+  height: 440px;
+  margin: auto;
+  position: relative;
+}
+.main > .fb > .front {
+  width: 100%;
+  height: 100%;
+  background: url("../lionel-messi-celebrates-after-their-sides-third-goal-by-news-photo-1686170172.jpg") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(0deg);
+  transition: 1s;
+  backface-visibility: hidden;
+}
+.main > .fb > .back {
+  width: 100%;
+  height: 100%;
+  background: url("../1650647833326.jpeg") center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  transition: 1s;
+  backface-visibility: hidden;
+}
+.main > .fb:hover > .back {
+  transform: rotateY(0deg);
+  transition: 1s;
+}
+.main > .fb:hover > .front {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+.pain {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  align-items: center;
+  color: white;
+  background: linear-gradient(to top right, gray, red, black), url("../images.jpeg") center/cover fixed;
+}/*# sourceMappingURL=style.css.map */
